@@ -135,7 +135,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-karma');
 
   // Tasks
-  grunt.registerTask('test', ['karma:unit']);
+  //grunt.registerTask('test', ['karma:unit']);
   grunt.registerTask('build', ['coffeelint', 'coffee', 'concat', 'uglify', 'copy'])
-  grunt.registerTask('default', ['build', 'test']);
+  grunt.registerTask('default', ['build', 'watch']);
 };
